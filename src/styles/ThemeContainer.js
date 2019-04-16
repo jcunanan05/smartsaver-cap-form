@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
-const theme = createMuiTheme();
+const theme = createMuiTheme({
+  typography: {
+    useNextVariants: true
+  }
+});
 
 function ThemeContainer(WrappedComponent) {
   class EnhancedComponent extends Component {
