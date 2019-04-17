@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import CSSBaseline from '@material-ui/core/CssBaseline';
 
 const theme = createMuiTheme({
   typography: {
@@ -12,6 +13,7 @@ function ThemeContainer(WrappedComponent) {
     render() {
       return (
         <MuiThemeProvider theme={theme}>
+          <CSSBaseline />
           <WrappedComponent />
         </MuiThemeProvider>
       );
