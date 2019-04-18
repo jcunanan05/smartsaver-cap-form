@@ -4,7 +4,11 @@ import CSSBaseline from '@material-ui/core/CssBaseline';
 
 const theme = createMuiTheme({
   typography: {
-    useNextVariants: true
+    useNextVariants: true,
+    h2: {
+      fontSize: 24,
+      fontWeight: 400
+    }
   }
 });
 
