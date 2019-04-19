@@ -5,15 +5,19 @@ import BotSection from './sections/BotSection';
 import JotformSection from './sections/JotformSection';
 import PermissionSection from './sections/PermissionSection';
 import Container from './components/Container';
+import Paper from '@material-ui/core/Paper';
+import style from './App.module.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className={`App ${style.App}`}>
       <Container>
-        <Header title="Consent Capture Form" />
-        <BotSection />
-        <JotformSection />
-        <PermissionSection />
+        <Paper>
+          <Header title="Consent Capture Form" />
+          <BotSection />
+          <JotformSection />
+          <PermissionSection />
+        </Paper>
       </Container>
     </div>
   );
